@@ -7,14 +7,14 @@
 
 /* Body and Font */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    font-family: 'Georgia', serif;
+    background-color: #fffafa;
     color: #333;
 }
 
 /* Header */
 header {
-    background-color: #6b84ff;
+    background-color: #cf6382;
     color: white;
     padding: 1rem 2rem;
     display: flex;
@@ -43,9 +43,40 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Stack the header contents */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;  /* Reduced padding for smaller screens */
+    }
+
+    /* Resize the logo */
+    header .logo {
+        font-size: 1.4rem;  /* Smaller logo on mobile */
+        margin-bottom: 1rem; /* Add space below the logo */
+    }
+
+    /* Stack navigation items vertically */
+    header nav ul {
+        display: block;
+        gap: 1rem;
+    }
+
+    /* Adjust the spacing of navigation items on mobile */
+    header nav ul li {
+        margin-bottom: 0.5rem;  /* Add space between links */
+    }
+
+    header nav ul li a {
+        font-size: 1.2rem;  /* make links slightly larger for mobile */
+    }
+}
+
 /* Hero Section */
 .hero {
-    background: #6b84ff;
+    background: #cf6382;
     color: white;
     text-align: center;
     padding: 4rem 2rem;
@@ -67,24 +98,27 @@ header nav ul li a:hover {
 }
 
 .cta-btn {
-    background-color: #ff66cc;
+    background-color: #f89c80;
     color: white;
+    text-decoration: none;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
     margin-top: 1.5rem; /* Added margin to separate button from text */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+    width: auto;
+    max-width: 250px; 
 }
 
 .cta-btn:hover {
-    background-color: #ff3385;
+    background-color: #f57f5b;
     transform: scale(1.05); /* Slight scale on hover */
 }
 
 /* About & Team Section */
 .about, .team {
     padding: 3rem 2rem;
-    background-color: #e0f7fa;
+    background-color: #ffe0e0;
     text-align: center;
 }
 
@@ -139,7 +173,7 @@ header nav ul li a:hover {
 }
 
 .card-btn {
-    background-color: #6b84ff;
+    background-color: #cf6382;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -150,7 +184,7 @@ header nav ul li a:hover {
 }
 
 .card-btn:hover {
-    background-color: #4866fd;
+    background-color: #c44267;
     transform: scale(1.05); 
 }
 
@@ -174,27 +208,6 @@ header nav ul li a:hover {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     margin-top: 1rem; 
-}
-
-.support .cta-btn{
-    background-color: #ff66cc;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    margin-top: 1rem; 
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.support .cta-btn:hover{
-    background-color: #ff3385;
-    transform: scale(1.05); 
-}
-
-
-.support .cta-btn{
-    width: auto;
-    max-width: 250px; 
 }
 
 /* Articles Section */
@@ -241,7 +254,7 @@ header nav ul li a:hover {
 
 /* Contact Section */
 .contact {
-    background-color: #ffccf2;
+    background-color: #f9dbc3;
     padding: 3rem 2rem;
 }
 
@@ -253,8 +266,7 @@ header nav ul li a:hover {
     margin: 0 auto;
 }
 
-.contact input,
-.contact textarea {
+.contact input, .contact textarea {
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ddd;
@@ -262,7 +274,7 @@ header nav ul li a:hover {
 }
 
 .contact button {
-    background-color: #ff66cc;
+    background-color: #f89c80;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -273,7 +285,7 @@ header nav ul li a:hover {
 }
 
 .contact button:hover {
-    background-color: #ff3385;
+    background-color: #f57f5b;
     transform: scale(1.05); 
 }
 
@@ -281,7 +293,7 @@ header nav ul li a:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #6b84ff;
+    background-color: #cf6382;
     color: white;
 }
 
@@ -296,13 +308,13 @@ footer p {
 }
 
 .disclaimer h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #c62121;
 }
 
 .disclaimer p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
     color: #c62121;
 }
