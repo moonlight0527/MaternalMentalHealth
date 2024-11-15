@@ -43,6 +43,20 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     /* Stack the header contents */
@@ -71,6 +85,16 @@ header nav ul li a:hover {
 
     header nav ul li a {
         font-size: 1.2rem;  /* make links slightly larger for mobile */
+    }
+
+    /* Show the hamburger menu on mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    /* When the hamburger is clicked, show the menu */
+    .active #nav-links {
+        display: flex;
     }
 }
 
