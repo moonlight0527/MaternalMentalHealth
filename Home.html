@@ -19,13 +19,13 @@
             <span class="bar"></span>
         </div>
         <nav>
-            <ul>
+            <ul id="nav-links">
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="AboutPage.html">About</a></li>
                 <li><a href="PageNotFound.html">Resources</a></li>
                 <li><a href="PageNotFound.html">Support Groups</a></li>
                 <li><a href="PageNotFound.html">Articles</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="Home.html#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -95,6 +95,22 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
+
+    <script> 
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Thank you for your message, ' + name + '! We will get back to you shortly.');
+            } else {
+                alert('Please fill in all fields before submitting.');
+            }
+        });
+    </script>
 
     <section id="disclaimer" class="disclaimer">
         <h2><b>Disclaimer</b></h2>
