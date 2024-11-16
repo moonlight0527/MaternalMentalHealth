@@ -21,28 +21,23 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 header .logo {
     font-size: 1.8rem;
     font-weight: bold;
 }
-
 header nav ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
 }
-
 header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
-
 header nav ul li a:hover {
     text-decoration: underline;
 }
-
 /* Hamburger styles */
 .hamburger {
     display: none;
@@ -50,7 +45,6 @@ header nav ul li a:hover {
     flex-direction: column;
     gap: 5px;
 }
-
 .hamburger .bar {
     width: 25px;
     height: 3px;
@@ -58,7 +52,7 @@ header nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Mobile responsiveness */
+/* Mobile */
 @media (max-width: 768px) {
     /* Stack the header contents */
     header {
@@ -106,17 +100,16 @@ header nav ul li a:hover {
     align-items: center; /* Center horizontally */
     min-height: 100vh; /* Ensure full height */
 }
-
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 2rem; /* Increased space between title and paragraph */
 }
-
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem; /* Increased space between paragraph and button */
 }
 
+/* pink button*/
 .cta-btn {
     background-color: #f89c80;
     color: white;
@@ -129,7 +122,6 @@ header nav ul li a:hover {
     width: auto;
     max-width: 250px; 
 }
-
 .cta-btn:hover {
     background-color: #f57f5b;
     transform: scale(1.05); /* Slight scale on hover */
@@ -141,12 +133,10 @@ header nav ul li a:hover {
     background-color: #ffe0e0;
     text-align: center;
 }
-
 .about h2, .team h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-
 .about p, .team p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
@@ -156,13 +146,16 @@ header nav ul li a:hover {
 .resources {
     padding: 3rem 2rem;
 }
-
 .resources h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
 }
-
+.resources p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
 .resource-cards {
     display: flex;
     justify-content: space-around;
@@ -170,6 +163,7 @@ header nav ul li a:hover {
     flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
 }
 
+/* Cards */
 .card {
     background-color: #ffffff;
     padding: 2rem;
@@ -183,15 +177,12 @@ header nav ul li a:hover {
     justify-content: space-between; /* Ensure space between text and button */
     height: 300px; /* Fixed height for uniformity */
 }
-
 .card h3 {
     margin-bottom: 1rem;
 }
-
 .card p {
     flex-grow: 1; 
 }
-
 .card-btn {
     background-color: #cf6382;
     color: white;
@@ -202,7 +193,6 @@ header nav ul li a:hover {
     margin-top: 1rem; 
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 .card-btn:hover {
     background-color: #c44267;
     transform: scale(1.05); 
@@ -210,6 +200,7 @@ header nav ul li a:hover {
 
 /* Support  Sections */
 .support {
+    background-color: #FAEBD7;
     padding: 3rem 2rem;
     text-align: center;
     display: flex;
@@ -217,13 +208,11 @@ header nav ul li a:hover {
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
 }
-
 .support h2{
     font-size: 2rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
-
 .support p, .articles p{
     font-size: 1.2rem;
     margin-bottom: 2rem;
@@ -239,12 +228,10 @@ header nav ul li a:hover {
     justify-content: center; 
     align-items: center; 
 }
-
 .articles h2 {
     font-size: 2rem;
     margin-bottom: 2rem; 
 }
-
 .article-subsection {
     padding: 2rem;
     width: 100%;
@@ -256,17 +243,14 @@ header nav ul li a:hover {
     align-items: center;
     text-align: center;
 }
-
 .article-subsection h3 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
-
 .article-subsection p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
-
 .articles .article-subsection .article-btn {
     width: auto;
     max-width: 250px; 
@@ -277,7 +261,6 @@ header nav ul li a:hover {
     background-color: #f9dbc3;
     padding: 3rem 2rem;
 }
-
 .contact form {
     display: flex;
     flex-direction: column;
@@ -285,14 +268,12 @@ header nav ul li a:hover {
     max-width: 600px;
     margin: 0 auto;
 }
-
 .contact input, .contact textarea {
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-
 .contact button {
     background-color: #f89c80;
     color: white;
@@ -303,7 +284,6 @@ header nav ul li a:hover {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 .contact button:hover {
     background-color: #f57f5b;
     transform: scale(1.05); 
@@ -316,23 +296,21 @@ footer {
     background-color: #cf6382;
     color: white;
 }
-
 footer p {
     font-size: 1rem;
     margin-top: 1rem;
 }
 
+/* Disclaimer */
 .disclaimer {
     padding: 3rem 2rem;
     text-align: center;
 }
-
 .disclaimer h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #c62121;
 }
-
 .disclaimer p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
